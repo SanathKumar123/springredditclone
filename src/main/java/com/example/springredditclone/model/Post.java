@@ -10,7 +10,7 @@ import java.time.Instant;
 
 
 @Data //Responsible for automatically generating getters and setters for this class
-//@Entity
+@Entity
 @Builder // Uses builder design pattern to generate objects for the class
 //Generating constructors
 @AllArgsConstructor
@@ -28,11 +28,11 @@ public class Post {
     @Lob// For large chunks of texts.
     private String description;
     private Integer voteCount;
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "userId", referencedColumnName = "userId")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
     private Instant createdDate;
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "id", referencedColumnName = "id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id", referencedColumnName = "id")
     private Subreddit subreddit;
 }

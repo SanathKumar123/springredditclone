@@ -10,7 +10,7 @@ import java.util.List;
 import static jakarta.persistence.FetchType.LAZY;
 
 @Data
-//@Entity
+@Entity
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,9 +23,9 @@ public class Subreddit {
     private String name;
     @NotBlank(message = "Description is needed")
     private String description;
-//    @OneToMany(fetch = LAZY)
+    @OneToMany(fetch = LAZY)
     private List<Post> posts;
     private Instant createdDate;
-//    @ManyToOne(fetch = LAZY)
+    @ManyToOne(fetch = LAZY)
     private User user;
 }

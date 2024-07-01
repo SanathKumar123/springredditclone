@@ -9,8 +9,8 @@ import java.time.Instant;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
-//@Table(name = "Token") // used to check, verify, and retrieve the user
+@Entity
+@Table(name = "Token") // used to check, verify, and retrieve the user
 @Document
 public class VerificationToken {
     @Id

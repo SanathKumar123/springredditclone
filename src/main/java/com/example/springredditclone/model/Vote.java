@@ -9,7 +9,7 @@ import static jakarta.persistence.FetchType.LAZY;
 
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
+@Entity
 @Builder
 @Data
 @Document
@@ -19,10 +19,10 @@ public class Vote {
     private Long voteId;
     private VoteType voteType;
     @NotNull
-//    @ManyToOne(fetch = LAZY)
-//    @JoinColumn(name = "postId", referencedColumnName = "postId")
+    @ManyToOne(fetch = LAZY)
+    @JoinColumn(name = "postId", referencedColumnName = "postId")
     private Post post;
-//    @ManyToOne(fetch = LAZY)
-//    @JoinColumn(name = "userId", referencedColumnName = "userId")
+    @ManyToOne(fetch = LAZY)
+    @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
 }
