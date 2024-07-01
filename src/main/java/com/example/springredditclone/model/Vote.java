@@ -3,7 +3,7 @@ package com.example.springredditclone.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
-import org.springframework.data.mongodb.core.mapping.Document;
+//import org.springframework.data.mongodb.core.mapping.Document;
 
 import static jakarta.persistence.FetchType.LAZY;
 
@@ -12,7 +12,7 @@ import static jakarta.persistence.FetchType.LAZY;
 @Entity
 @Builder
 @Data
-@Document
+//@Document
 public class Vote {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

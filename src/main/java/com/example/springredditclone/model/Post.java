@@ -3,7 +3,6 @@ package com.example.springredditclone.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.lang.*;
 
 import java.time.Instant;
@@ -15,7 +14,6 @@ import java.time.Instant;
 //Generating constructors
 @AllArgsConstructor
 @NoArgsConstructor
-@Document
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

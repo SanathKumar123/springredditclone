@@ -3,7 +3,7 @@ package com.example.springredditclone.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-import org.springframework.data.mongodb.core.mapping.Document;
+//import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
 import java.util.List;
@@ -14,7 +14,7 @@ import static jakarta.persistence.FetchType.LAZY;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document
+//@Document
 public class Subreddit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

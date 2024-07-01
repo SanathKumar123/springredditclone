@@ -2,7 +2,7 @@ package com.example.springredditclone.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.mongodb.core.mapping.Document;
+//import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
 
@@ -11,7 +11,7 @@ import java.time.Instant;
 @NoArgsConstructor
 @Entity
 @Table(name = "Token") // used to check, verify, and retrieve the user
-@Document
+//@Document
 public class VerificationToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

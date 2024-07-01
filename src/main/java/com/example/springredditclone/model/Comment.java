@@ -2,7 +2,6 @@ package com.example.springredditclone.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
 
@@ -12,8 +11,7 @@ import static jakarta.persistence.FetchType.LAZY;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
-@Document
+@Entity
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
